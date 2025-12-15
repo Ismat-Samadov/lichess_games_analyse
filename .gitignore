@@ -1,0 +1,9 @@
+.claude
+venv
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
