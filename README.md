@@ -1,6 +1,6 @@
 # 📊 Lichess Chess Performance Analysis
 
-> Comprehensive analysis of chess games from two Lichess accounts (IsmatS & Cassiny) - 830 games analyzed to identify strengths, weaknesses, and improvement opportunities.
+> Comprehensive analysis of chess games from two Lichess accounts (IsmatS & Cassiny) - 14,717 games analyzed to identify strengths, weaknesses, and improvement opportunities.
 
 ---
 
@@ -12,12 +12,13 @@ This repository contains a complete data-driven analysis of chess performance ac
 
 | Metric | Value |
 |--------|-------|
-| **Total Games Analyzed** | 830 games |
-| **Overall Win Rate** | 35.1% |
-| **Total Rating Gained** | +7,742 points |
-| **Average Rating** | 1,542 |
-| **Most Common Time Control** | Blitz (180+0) |
-| **Average Game Length** | 60.1 moves |
+| **Total Games Analyzed** | 14,717 games |
+| **Overall Win Rate** | 48.5% |
+| **Total Rating Gained** | +374 points |
+| **Average Rating** | 1,587 |
+| **Rating Range** | 1,074 - 1,991 |
+| **Average Game Length** | 64.4 moves |
+| **Wins / Losses / Draws** | 7,143 / 6,921 / 653 |
 
 ---
 
@@ -93,7 +94,7 @@ All insights are derived directly from game data with no generic advice.
 ![Rating Progression](charts/04_rating_progression.png)
 
 **Key Insights:**
-- Total rating gain of **+7,742 points** shows strong upward trajectory
+- Total rating gain of **+374 points** across 14,717 games
 - Steep slopes indicate breakthrough periods
 - Plateaus show where additional training is needed
 - Dips reveal tilt or fatigue periods
@@ -377,8 +378,8 @@ Among frequently-played openings (5+ games):
 
 ### Data Collection
 - Source: Lichess.org PGN exports
-- Two accounts analyzed: IsmatS (117 games) and Cassiny (713 games)
-- Total dataset: 830 games
+- Two accounts analyzed: IsmatS (1,724 games) and Cassiny (12,993 games)
+- Total dataset: 14,717 games
 - Time period: December 2025
 
 ### Analysis Framework
@@ -498,14 +499,12 @@ jupyter nbconvert --to notebook --execute chess_analysis.ipynb --output chess_an
 ## 📊 Key Findings from Sample Dataset
 
 ### Account Performance
-- **IsmatS**: 50.4% win rate, 1588 avg rating, +1,681 rating gain
-- **Cassiny**: 32.5% win rate, 1528 avg rating, +6,061 rating gain
+- **IsmatS**: 1,724 games from this account
+- **Cassiny**: 12,993 games from this account
+- **Combined**: 14,717 total games with 48.5% overall win rate
 
 ### Critical Patterns Identified
-1. **Scandinavian Defense** = 9.1% win rate (significant underperformance)
-2. **Philidor Defense** = 16.7% win rate (needs attention)
-3. **Caro-Kann Defense** = 57.1% win rate (strong suit)
-4. **King's Pawn Leonardis** = 75% win rate on IsmatS account
+Analysis reveals specific opening strengths and weaknesses across the 14,717 game dataset. Detailed performance metrics for each opening are available in the generated charts.
 
 ### Games Between Accounts
 - Automatically detected and handled
@@ -617,4 +616,4 @@ This analysis demonstrates how data-driven insights can improve chess performanc
 ---
 
 *Last Updated: December 2025*
-*Analysis based on 830 games across two Lichess accounts*
+*Analysis based on 14,717 games from two Lichess accounts (IsmatS: 1,724, Cassiny: 12,993)*
