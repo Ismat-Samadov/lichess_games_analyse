@@ -6,7 +6,7 @@
 
 ## 🎯 Executive Summary
 
-This analysis combines data from both of your Lichess accounts to provide actionable insights for improving your chess performance.
+This repository contains a complete data-driven analysis of chess performance across two Lichess accounts, providing actionable insights for improving chess skills through statistical analysis and data visualization.
 
 ### Key Metrics
 
@@ -21,450 +21,379 @@ This analysis combines data from both of your Lichess accounts to provide action
 
 ---
 
-## 📈 1. Color Performance Analysis
+## 📈 Analysis Overview
 
-### Win Rate by Color - Critical Finding
+This analysis provides 20 comprehensive charts covering:
+
+- **Color Performance** - White vs Black win rates
+- **Time Control Analysis** - Performance across different game formats
+- **Opening Repertoire** - Best and worst performing openings
+- **Rating Progression** - Performance trajectory over time
+- **Opponent Strength Analysis** - Win rates against different rating levels
+- **Game Phase Performance** - Tactical vs positional play strengths
+- **Consistency Metrics** - Streak analysis and variance
+- **Temporal Patterns** - Performance by day of week and month
+
+All insights are derived directly from game data with no generic advice.
+
+---
+
+## 📊 Detailed Analysis
+
+### 1. Color Performance Analysis
 
 ![Win Rate by Color](charts/01_win_rate_by_color.png)
 
-**💡 Key Insight:**
-You perform **significantly better as White** with a win rate gap of approximately 5-7%. This is above the typical 2-3% advantage expected from playing White.
+**Key Insights:**
+- Performance comparison between playing as White and Black
+- Identifies color advantage disparity
+- Win rate differential analysis
 
-**🎯 Actionable Recommendations:**
-- ✅ **Strength**: Your White openings are working well - maintain this advantage
-- ⚠️ **Improvement Area**: Focus on improving Black defenses
-- 📚 Study more Black opening repertoires, especially against 1.e4 and 1.d4
-- 🎮 Practice tactical puzzles from Black's perspective
+**Typical Patterns:**
+- Advantage of 5-7%+ for White indicates strong opening preparation with White pieces
+- Lower Black performance suggests defensive repertoire needs improvement
+- Normal expectation is 2-3% White advantage
 
 ---
 
-## ⏱️ 2. Time Control Performance
-
-### Performance by Time Control
+### 2. Time Control Performance
 
 ![Performance by Time Control](charts/02_performance_by_time_control.png)
 
-**💡 Key Insight:**
-Your performance varies significantly across time controls. Blitz (3-minute) is your most played format but may not be your strongest.
+**Key Insights:**
+- Performance varies significantly across time controls
+- Identifies optimal formats for rating improvement
+- Shows adaptation to different time pressures
 
-**🎯 Actionable Recommendations:**
-- ⚠️ **Critical**: If Rapid shows better win rates, consider playing more Rapid games for rating improvement
-- 🧠 Blitz games are good for pattern recognition, but longer time controls help develop calculation skills
-- ⏰ Identify your optimal time control and focus 70% of your games there
+**Application:**
+- Players should focus on their strongest time control format
+- Blitz games develop pattern recognition
+- Longer controls improve calculation depth
 
 ---
 
-## 💪 3. Performance vs Opponent Strength
-
-### Win Rate Against Different Rating Levels
+### 3. Performance vs Opponent Strength
 
 ![Win Rate vs Opponent Rating](charts/03_win_rate_vs_opponent_rating.png)
 
-**💡 Key Insight:**
-This chart reveals your performance against weaker, equal, and stronger opponents. A healthy curve shows:
-- High win rate against weaker opponents (-100+ rating)
-- ~50% against equal opponents
-- Lower but non-zero against stronger opponents
+**Key Insights:**
+- Win rate against weaker, equal, and stronger opponents
+- Healthy curve shows high win rate vs weaker players declining to lower rates vs stronger players
+- Flat performance vs equal opponents suggests room for improvement
 
-**🎯 Actionable Recommendations:**
-- If you're losing to significantly weaker opponents (>30% loss rate), you may have **consistency issues**
-- If you rarely beat higher-rated opponents, work on **exploitation and tactics**
-- If you struggle against similar-rated players, focus on **opening preparation and endgame technique**
+**Interpretation:**
+- >30% loss rate to much weaker opponents indicates consistency issues
+- Very low win rate vs stronger opponents suggests exploitation/tactical gaps
+- ~50% vs similar-rated players is expected
 
 ---
 
-## 📊 4. Rating Journey
-
-### Cumulative Rating Progression
+### 4. Rating Journey
 
 ![Rating Progression](charts/04_rating_progression.png)
 
-**💡 Key Insight:**
-Your total rating gain of **+7,742 points** shows strong upward trajectory. However, the curve shape reveals important patterns:
-- **Steep upward slopes** = hot streaks / breakthrough periods
-- **Plateaus** = periods where you need to level up your skills
-- **Dips** = tilt or playing while fatigued
+**Key Insights:**
+- Total rating gain of **+7,742 points** shows strong upward trajectory
+- Steep slopes indicate breakthrough periods
+- Plateaus show where additional training is needed
+- Dips reveal tilt or fatigue periods
 
-**🎯 Actionable Recommendations:**
-- 📈 Identify what worked during your best winning streaks
-- 🛑 Recognize when you're on a losing streak and take breaks
-- 🎯 Set specific rating goals for the next 100 games
+**Pattern Analysis:**
+- Upward trends indicate successful skill development
+- Volatility suggests inconsistent performance
+- Smooth growth shows steady improvement
 
 ---
 
-## ♟️ 5. Opening Performance Analysis
-
-### Top 15 Most Played Openings
+### 5. Opening Performance Analysis
 
 ![Top Openings Performance](charts/05_top_openings_performance.png)
 
-**💡 Key Insights:**
-Your opening repertoire shows clear strengths and weaknesses:
+**Key Insights from Data:**
 
-**🟢 Strong Openings (>50% win rate):**
-- Caro-Kann Defense (57.1% win rate) - **Keep playing this!**
-- These are your "bread and butter" - play them with confidence
+**Strong Openings (>50% win rate):**
+- Caro-Kann Defense (57.1% win rate)
+- Identified high-performing variations
 
-**🔴 Weak Openings (<30% win rate):**
-- Scandinavian Defense: Valencian Variation (9.1%) - **Avoid or study intensively**
-- Philidor Defense (16.7%) - **Consider dropping from repertoire**
+**Weak Openings (<30% win rate):**
+- Scandinavian Defense: Valencian Variation (9.1%)
+- Philidor Defense (16.7%)
 
-**🎯 Actionable Recommendations:**
-- 🎯 **Double down** on your best openings - play them more frequently
-- 📚 **Study** or **eliminate** your worst openings (study if you like them, eliminate if not)
-- 🔄 Consider replacing poor-performing openings with similar but more effective alternatives
+**Recommendations:**
+- Focus on mastering high-performing openings
+- Consider replacing underperforming openings (especially those below 25% win rate)
+- Study or eliminate openings with very poor results
 
 ---
 
-## 📏 6. Game Length Patterns
-
-### Game Length Distribution by Result
+### 6. Game Length Patterns
 
 ![Game Length Distribution](charts/06_game_length_distribution.png)
 
-**💡 Key Insight:**
-Analyzing average game length by result:
-- If **wins are shorter** than losses: You excel at tactics and exploitation
-- If **losses are shorter** than wins: You may be making early blunders
-- If **both are long**: You're a positional/endgame player
+**Key Insights:**
+- Average game length by result reveals playing style
+- Shorter wins suggest tactical/exploitation strength
+- Shorter losses indicate early-game vulnerabilities
+- Long losses point to endgame weaknesses
 
-**🎯 Actionable Recommendations:**
-- Short losses (<30 moves) suggest **opening/early-game blunders** - review these games!
-- Long losses (>60 moves) indicate **endgame weaknesses** - study basic endgames
-- Optimize game length: Don't play too fast in complex positions, don't overthink simple ones
+**Style Indicators:**
+- Short games: Tactical specialist
+- Medium games: Well-rounded player
+- Long games: Endgame expert/positional player
 
 ---
 
-## ⚔️ 7. How Games End
-
-### Termination Type Analysis
+### 7. Game Termination Analysis
 
 ![Termination Types](charts/07_termination_type_analysis.png)
 
-**💡 Key Insight:**
-How your games end reveals playing style and weaknesses:
-- **High resignation rate**: Good at building winning advantages
-- **Time losses**: Clock management issues
-- **Abandonment**: Technical or focus issues
+**Key Insights:**
+- How games end reveals playing style and potential issues
+- High resignation rates show ability to build winning advantages
+- Frequent time losses indicate clock management problems
+- Abandonment rates show technical/focus issues
 
-**🎯 Actionable Recommendations:**
-- ⏰ If losing on time frequently (>15%): **Improve time management** or play longer time controls
-- 🎯 If many resignations in losses: You might be **giving up too early** - practice defending worse positions
-- ✅ Normal termination rate is good - shows you play games to logical conclusions
+**Healthy Patterns:**
+- Majority normal terminations
+- <10% time losses
+- Minimal abandonments
 
 ---
 
-## 📅 8. Weekly Performance Patterns
-
-### Performance by Day of Week
+### 8. Weekly Performance Patterns
 
 ![Performance by Day](charts/08_performance_by_day_of_week.png)
 
-**💡 Key Insight:**
-Your performance likely varies by day of the week based on energy levels, schedule, and mental state.
+**Key Insights:**
+- Performance varies by day of week based on energy, schedule, and mental state
+- Identifies best and worst playing days
 
-**🎯 Actionable Recommendations:**
-- 🟢 **Play rated games** on your best-performing days
-- 🟡 **Practice/train** on average days
-- 🔴 **Avoid rated games** or take rest on worst-performing days
-- 📊 Use this data to optimize your playing schedule
+**Optimization Strategy:**
+- Schedule important rated games on best-performing days
+- Use weaker days for training and practice
+- Rest on consistently poor-performing days
 
 ---
 
-## 🎨 9. ECO Code Performance
-
-### Opening Categories (ECO Codes)
+### 9. ECO Code Performance
 
 ![ECO Performance](charts/09_eco_code_performance.png)
 
-**💡 Key Insight:**
-ECO codes group openings by category (e.g., C00-C19 = French Defense, E60-E99 = Indian Defenses).
-- High-performing ECO codes = opening families that suit your style
-- Low-performing codes = opening families to avoid or study
+**Key Insights:**
+- ECO codes group openings by category
+- High-performing categories suit the player's style
+- Low-performing categories should be avoided or studied intensively
 
-**🎯 Actionable Recommendations:**
-- 🎯 Build your repertoire around your best-performing ECO categories
-- 📚 Study master games in your successful opening categories
-- 🔄 Replace entire ECO categories that consistently underperform
+**Strategic Use:**
+- Build repertoire around successful ECO categories
+- Study master games in best-performing categories
+- Replace entire failing opening families
 
 ---
 
-## 🎢 10. Streak Analysis
-
-### Win and Loss Streaks
+### 10. Streak Analysis
 
 ![Streaks](charts/10_win_loss_streaks.png)
 
-**💡 Key Insight:**
-- **Longest win streak** shows your peak performance capability
-- **Longest loss streak** reveals tilt/fatigue susceptibility
-- Frequent small streaks = inconsistent play
+**Key Insights:**
+- Longest win streak shows peak performance capability
+- Longest loss streak reveals tilt/fatigue susceptibility
+- Frequent small streaks indicate inconsistency
 
-**🎯 Actionable Recommendations:**
-- 🛑 **Stop playing** after 2-3 consecutive losses to avoid tilt
-- 🎯 **Capitalize on momentum** during win streaks but stay focused
-- 📈 Long loss streaks (>5) often indicate fatigue or mental state issues - take a break!
+**Best Practices:**
+- Stop playing after 2-3 consecutive losses to prevent tilt
+- Capitalize on momentum during win streaks while staying focused
+- Loss streaks >5 often indicate fatigue - take breaks
 
 ---
 
-## 📆 11. Monthly Performance Trend
-
-### Month-over-Month Progress
+### 11. Monthly Performance Trend
 
 ![Monthly Trend](charts/11_monthly_performance_trend.png)
 
-**💡 Key Insight:**
-The trend line shows whether you're improving over time:
-- **Upward trend** = Getting stronger month-over-month ✅
-- **Flat trend** = Plateau - need new training methods
-- **Downward trend** = Regression - review recent changes
+**Key Insights:**
+- Trend line shows improvement trajectory over time
+- Upward trend = consistent skill development
+- Flat trend = plateau requiring new training methods
+- Downward trend = regression requiring intervention
 
-**🎯 Actionable Recommendations:**
-- 📈 If improving: **Keep doing what you're doing!**
-- ⏸️ If plateaued: **Invest in training** - books, courses, coaching
-- 📉 If declining: **Identify root cause** - tilt, playing too fast, weak openings?
+**Action Items:**
+- Improving: Continue current training regimen
+- Plateaued: Invest in new study materials or coaching
+- Declining: Identify and address root causes
 
 ---
 
-## 💰 12. Rating Points Distribution
-
-### Points Gained vs Lost Per Game
+### 12. Rating Points Distribution
 
 ![Rating Distribution](charts/12_rating_change_distribution.png)
 
-**💡 Key Insight:**
-Shows the rating points you typically gain/lose:
-- Average win gain vs average loss loss reveals if you're playing appropriate opponents
-- If losing more points than gaining: Playing too many lower-rated opponents
-- If gaining more than losing: Playing higher-rated opponents (good for improvement!)
+**Key Insights:**
+- Shows typical rating points gained/lost per game
+- Average win gain vs average loss indicates opponent selection
+- Losing more points than gaining suggests playing too many lower-rated opponents
+- Gaining more than losing indicates playing higher-rated opponents (optimal for improvement)
 
-**🎯 Actionable Recommendations:**
-- 🎯 **Optimal**: Play opponents within ±100 rating points
-- 📈 **For improvement**: Play opponents +50 to +200 rating points
-- 🏆 **For confidence**: Mix in some slightly lower-rated opponents
+**Optimal Strategy:**
+- Play opponents within ±100 rating points
+- For improvement: Play opponents +50 to +200 rating points
+- For confidence: Mix in some slightly lower-rated opponents
 
 ---
 
-## ⚖️ 13. Game Length vs Performance
-
-### Win Rate by Game Length Category
+### 13. Game Length vs Performance
 
 ![Game Length Performance](charts/13_performance_vs_game_length.png)
 
-**💡 Key Insight:**
-Reveals whether you're better at:
-- **Short games (0-40 moves)**: Tactical/opening specialist
-- **Medium games (41-80 moves)**: Well-rounded player
-- **Long games (80+ moves)**: Endgame expert
+**Key Insights:**
+- Reveals strengths in different game phases:
+  - Short games (0-40 moves): Tactical/opening specialist
+  - Medium games (41-80 moves): Well-rounded player
+  - Long games (80+ moves): Endgame expert
 
-**🎯 Actionable Recommendations:**
-- 🔴 **Weak in short games**: Study openings and tactics
-- 🟡 **Weak in medium games**: Improve middle-game planning and strategy
-- 🔵 **Weak in long games**: Practice endgame fundamentals (rook endgames, pawn endgames)
+**Training Focus:**
+- Weak in short games: Study openings and tactics
+- Weak in medium games: Improve middle-game planning
+- Weak in long games: Practice endgame fundamentals
 
 ---
 
-## 🔀 14. Account Comparison
-
-### IsmatS vs Cassiny Performance
+### 14. Account Comparison
 
 ![Account Comparison](charts/14_account_comparison.png)
 
-**💡 Key Insight:**
-Comparing your two accounts reveals:
+**Key Insights:**
 - **IsmatS**: 117 games, ~50% win rate, higher average rating (1588)
 - **Cassiny**: 713 games, 32.5% win rate, lower average rating (1528)
 
-The performance gap is significant!
-
-**🎯 Actionable Recommendations:**
-- 🤔 **Investigate the difference**: Why does IsmatS perform better?
-  - Different opening repertoire?
-  - More focused/serious play?
-  - Different time controls?
-- 📚 **Apply IsmatS's approach** to Cassiny games
-- 🎯 **Use Cassiny for experiments**, IsmatS for serious rated games
+**Analysis:**
+Performance gap analysis can reveal:
+- Different opening repertoires
+- Varying levels of focus/seriousness
+- Time control preferences
+- Learning progression between accounts
 
 ---
 
-## 🏆 15. Best and Worst Openings
-
-### Opening Performance Deep Dive (Min. 5 Games)
+### 15. Best and Worst Openings
 
 ![Best vs Worst Openings](charts/15_best_worst_openings.png)
 
-**💡 Key Insight:**
+**Key Insights:**
 Among frequently-played openings (5+ games):
-- **Best**: Van't Kruijs Opening (100%), King's Pawn Game: Leonardis Variation (75% as IsmatS)
-- **Worst**: Scandinavian Defense: Valencian Variation (9.1%), Philidor Defense (16.7%)
+- **Best performers**: Identified openings with >60% win rates
+- **Worst performers**: Openings with <25% win rates
 
-**The win rate gap can be 50%+ between best and worst openings!**
+**Win rate gaps can exceed 50% between best and worst openings**
 
-**🎯 Actionable Recommendations:**
-- 🏆 **Your Winners** - Master these deeply:
-  - Play them in critical rated games
-  - Study grandmaster games in these lines
-  - Expand your knowledge to related variations
-
-- ❌ **Your Losers** - Take action NOW:
-  - **Option A**: Intensive study (if you like the opening)
-  - **Option B**: Replace with better alternative (recommended for <25% win rate)
-  - 🚫 **Stop playing them immediately** if win rate is <20%
-
-**💡 Specific Recommendation:**
-- **Drop**: Scandinavian Defense (9.1%) - This is losing you rating points!
-- **Adopt**: Try 1...e5, 1...c5, or 1...e6 instead against 1.e4
+**Strategic Recommendations:**
+- Master best-performing openings deeply
+- Study grandmaster games in successful lines
+- Expand knowledge of winning variations
+- Replace openings with <20-25% win rate
+- Intensive study or replacement for openings <25% win rate
 
 ---
 
-## 🎨 16. Color Performance by Time Control
-
-### White vs Black Across Different Formats
+### 16. Color Performance by Time Control
 
 ![Color by TC](charts/16_color_performance_by_tc.png)
 
-**💡 Key Insight:**
-Your White vs Black performance may vary by time control:
-- Some players perform better with Black in bullet (less opening theory)
-- Others need more time to navigate Black's defenses
+**Key Insights:**
+- Color advantage may vary by time control
+- Some formats favor different pieces due to time pressure
+- Identifies optimal color-time-control combinations
 
-**🎯 Actionable Recommendations:**
-- 🎯 Identify your **best color-time-control combination**
-- 📊 If White is stronger in all formats: Focus more on improving Black
-- ⚡ If color advantage varies by time: Your opening repertoire may be time-control dependent
+**Applications:**
+- Target best-performing combinations
+- Identify format-specific weaknesses
+- Optimize opening repertoire by time control
 
 ---
 
-## 🔥 17. Performance Heatmap
-
-### Win Rate: Your Rating vs Opponent Rating
+### 17. Performance Heatmap
 
 ![Rating Heatmap](charts/17_rating_heatmap.png)
 
-**💡 Key Insight:**
-This heatmap shows win probability at different rating combinations:
-- **Green areas** = Your strength zones (high win rate)
-- **Red areas** = Your struggle zones (low win rate)
+**Key Insights:**
+- Win probability at different rating combinations
+- Green areas = strength zones (high win rate)
+- Red areas = struggle zones (low win rate)
 - Diagonal pattern = normal (higher opponent rating → lower win rate)
 
-**🎯 Actionable Recommendations:**
-- 🎯 **Target green zones** for rating farming (but don't only play these!)
-- 📚 **Study red zones** - these represent specific skill gaps
-- 💪 Play opponents +100 to +200 rating for maximum improvement
+**Strategic Use:**
+- Identify specific skill gaps in red zones
+- Play opponents +100 to +200 rating for maximum improvement
+- Balance rating farming with skill development
 
 ---
 
-## 📊 18. Rating Bracket Performance
-
-### How You Perform at Different Rating Levels
+### 18. Rating Bracket Performance
 
 ![Rating Brackets](charts/18_performance_by_rating_bracket.png)
 
-**💡 Key Insight:**
-Shows your performance as you climb rating brackets:
-- **Improving win rate** = You're getting stronger AND adapting well
-- **Declining win rate** = Plateau or hitting skill ceiling
-- **Volatile** = Inconsistent performance
+**Key Insights:**
+- Performance as player climbs through rating levels
+- Improving win rate = adaptation and growth
+- Declining win rate = plateau or skill ceiling
+- Volatile performance = inconsistency
 
-**🎯 Actionable Recommendations:**
-- 📉 **If win rate drops at higher ratings**: You've identified your current ceiling
-  - Focus on specific skill gaps (tactics, endgames, strategy)
-  - Consider coaching or intensive study
-- 📈 **If win rate stays consistent**: You're adapting well - keep pushing!
+**Indicators:**
+- Win rate dropping at higher ratings identifies current ceiling
+- Consistent win rate shows good adaptation
+- Focus areas emerge from bracket-specific weaknesses
 
 ---
 
-## 📈 19. Rolling Win Rate Trend
-
-### 50-Game Rolling Average
+### 19. Rolling Win Rate Trend
 
 ![Rolling Win Rate](charts/19_rolling_win_rate.png)
 
-**💡 Key Insight:**
-The 50-game rolling average smooths out variance to show true performance trends:
-- **Above 50%** = Currently improving / hot streak
-- **Below 50%** = Currently struggling / cold streak
-- **Trend direction** = More important than absolute value
+**Key Insights:**
+- 50-game rolling average smooths variance to show true trends
+- Above 50% = currently improving / hot streak
+- Below 50% = currently struggling / cold streak
+- Trend direction more important than absolute value
 
-**🎯 Actionable Recommendations:**
-- 📈 **Upward trend**: You're improving! Stay the course.
-- 📉 **Downward trend**: Warning sign - take action:
-  - Review recent losses for patterns
-  - Check if you're playing tired/tilted
-  - Consider taking a break or switching training methods
-- 🎯 **Flat at 50%**: Normal - you're at your current skill level, need to train to break through
+**Health Check:**
+- Upward trend: Improvement in progress
+- Downward trend: Warning sign - take corrective action
+- Flat at 50%: At current skill level - training needed to break through
 
 ---
 
-## 🎯 20. Complete Performance Dashboard
-
-### All Key Metrics in One View
+### 20. Complete Performance Dashboard
 
 ![Performance Dashboard](charts/20_performance_dashboard.png)
 
-**This is your overview dashboard** - Use it for quick health checks of your chess performance!
+**Comprehensive Overview Dashboard**
+- All key metrics in one view
+- Quick health check for chess performance
+- Summary statistics and visualizations
 
 ---
 
-## 🎓 Top 10 Actionable Recommendations
+## 🎓 Methodology
 
-Based on comprehensive data analysis, here are your **priority improvements**:
+### Data Collection
+- Source: Lichess.org PGN exports
+- Two accounts analyzed: IsmatS (117 games) and Cassiny (713 games)
+- Total dataset: 830 games
+- Time period: December 2025
 
-### 🔴 Critical (Fix Immediately)
+### Analysis Framework
+1. **Data Parsing**: Extract comprehensive game metadata from PGN files
+2. **Data Cleaning**: Handle missing ratings, detect inter-account games
+3. **Feature Engineering**: Calculate derived metrics (streaks, rolling averages, rating differentials)
+4. **Statistical Analysis**: Compute win rates, performance trends, correlations
+5. **Visualization**: Generate 20 professional charts for insight communication
 
-1. **⚠️ DROP the Scandinavian Defense (9.1% win rate)**
-   - You're losing 9 out of 10 games with this opening
-   - Replace with: French Defense, Caro-Kann, or 1...e5
-   - Estimated rating gain: +50-75 points
-
-2. **🛑 Implement a Stop-Loss Rule**
-   - Stop playing after 2-3 consecutive losses
-   - Your loss streaks are rating killers
-   - Prevention is easier than recovery
-
-3. **⏰ Improve Time Management**
-   - If you're losing on time >10% of games, this is fixable
-   - Use increment time controls (e.g., 15+10 instead of 15+0)
-   - Practice "move faster in simple positions"
-
-### 🟡 High Priority (Address Soon)
-
-4. **📚 Study Your Best Openings More Deeply**
-   - Caro-Kann (57% WR) - Become an expert!
-   - King's Pawn Game variations that work for you
-   - Master 15-20 moves deep in your best lines
-
-5. **🎯 Focus on Your Weaker Color**
-   - If Black is weaker: Spend 70% of study time on Black openings
-   - Watch GM games from Black's perspective
-   - Practice defensive technique
-
-6. **📊 Play Your Optimal Time Control**
-   - Identify which time control gives you best results
-   - Play 70% of rated games in that format
-   - Use other formats for practice/experimentation
-
-### 🟢 Medium Priority (Ongoing Improvement)
-
-7. **🔍 Analyze All Games in Your Worst Opening**
-   - Review every Philidor Defense / poor-performing opening game
-   - Find the recurring mistakes
-   - Either fix the pattern or drop the opening
-
-8. **💪 Train Your Weak Game Phase**
-   - Short losses → Tactics training (ChessTempo, Puzzle Rush)
-   - Long losses → Endgame study (Silman's Endgame Course)
-   - Medium losses → Strategy books (Dvoretsky, Aagaard)
-
-9. **📅 Schedule Smart**
-   - Play rated games on your best-performing days
-   - Avoid rated games when tired/stressed
-   - Morning vs evening performance may vary significantly
-
-10. **🎯 Set Specific Goals**
-    - Next 50 games: Target 55% win rate in your best opening
-    - Next 100 games: Improve Black win rate by 5%
-    - Next 3 months: Reach [target rating]
+### Key Features
+- **Inter-account game detection**: Games between the two accounts are identified and handled appropriately
+- **Unified perspective**: All analysis from single player's viewpoint across both accounts
+- **Rating difference analysis**: Performance vs opponents of varying strengths
+- **Temporal patterns**: Day of week, monthly trends, progression over time
+- **Opening repertoire**: Detailed ECO and full opening name analysis
 
 ---
 
@@ -476,11 +405,11 @@ lichess_games_analyse/
 ├── chess_analysis.ipynb          # Main Jupyter notebook with all analysis
 ├── chess_analysis_executed.ipynb # Executed version with outputs
 ├── README.md                      # This file
+├── requirements.txt               # Python dependencies
 │
 ├── data/
 │   ├── lichess_IsmatS_2025-12-15.pgn
-│   ├── lichess_Cassiny_2025-12-15.pgn
-│   └── *.png (old visualizations)
+│   └── lichess_Cassiny_2025-12-15.pgn
 │
 └── charts/                        # All 20 analysis charts
     ├── 01_win_rate_by_color.png
@@ -507,84 +436,185 @@ lichess_games_analyse/
 
 ---
 
-## 🚀 How to Use This Analysis
+## 🚀 Getting Started
 
-### Option 1: View the Jupyter Notebook
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd lichess_games_analyse
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+### Usage
+
+#### Option 1: View Pre-generated Analysis
+All visualizations are available in the `/charts` directory for immediate viewing.
+
+#### Option 2: Run the Jupyter Notebook
 ```bash
 jupyter notebook chess_analysis.ipynb
 ```
 
-### Option 2: Re-run the Analysis with New Data
-1. Download your latest PGN files from Lichess
+#### Option 3: Re-run Analysis with New Data
+1. Download PGN files from Lichess
 2. Replace files in `/data` directory
-3. Run the notebook:
+3. Update `MY_ACCOUNTS` list in notebook
+4. Execute all cells or run:
 ```bash
 jupyter nbconvert --to notebook --execute chess_analysis.ipynb --output chess_analysis_executed.ipynb
 ```
 
-### Option 3: Quick Stats
-All visualizations are in `/charts` - review them directly for quick insights!
+---
+
+## 🔧 Technical Details
+
+### Dependencies
+- **chess**: PGN parsing and game analysis
+- **pandas**: Data manipulation and analysis
+- **numpy**: Numerical computations
+- **matplotlib**: Chart generation
+- **seaborn**: Statistical visualizations
+- **jupyter**: Interactive notebook environment
+
+### Chart Specifications
+- **Resolution**: 300 DPI (publication quality)
+- **Format**: PNG with transparency
+- **Style**: Professional with consistent color scheme
+- **Design**: No pie charts (as per best practices), clear labels, grid lines for readability
+
+### Data Processing
+- Safe handling of missing/invalid ratings
+- Automatic detection of games between tracked accounts
+- Unified player perspective across multiple accounts
+- Categorical binning for rating differences and game lengths
+- Rolling window calculations for trend analysis
 
 ---
 
-## 📊 Data Sources
+## 📊 Key Findings from Sample Dataset
 
-- **IsmatS Account**: 117 games (December 2025)
-- **Cassiny Account**: 713 games (December 2025)
-- **Total**: 830 analyzed games
-- **Data Source**: Lichess.org PGN exports
+### Account Performance
+- **IsmatS**: 50.4% win rate, 1588 avg rating, +1,681 rating gain
+- **Cassiny**: 32.5% win rate, 1528 avg rating, +6,061 rating gain
 
----
+### Critical Patterns Identified
+1. **Scandinavian Defense** = 9.1% win rate (significant underperformance)
+2. **Philidor Defense** = 16.7% win rate (needs attention)
+3. **Caro-Kann Defense** = 57.1% win rate (strong suit)
+4. **King's Pawn Leonardis** = 75% win rate on IsmatS account
 
-## 🔮 Next Steps
-
-1. **Immediate**: Implement the top 3 critical recommendations
-2. **This Week**: Review all games in your worst-performing opening
-3. **This Month**: Set specific improvement goals and track progress
-4. **Ongoing**: Re-run this analysis monthly to track improvement
-
----
-
-## 📞 Questions or Feedback?
-
-This analysis is designed to be actionable and data-driven. Every chart reveals specific insights about your play.
-
-**Remember**:
-- 🎯 Small improvements compound over time
-- 📊 Data reveals patterns you might not notice
-- 💪 Focus on your biggest weaknesses for maximum rating gain
-- 🏆 Play to your strengths in critical games
+### Games Between Accounts
+- Automatically detected and handled
+- Treated as draws to avoid statistical bias
+- Clearly identified in analysis outputs
 
 ---
 
-## ⚡ Quick Win: The 30-Day Challenge
+## 📈 Potential Applications
 
-Based on this analysis, here's a focused 30-day plan:
+This analysis framework can be used for:
 
-### Week 1: Eliminate Weaknesses
-- ❌ Stop playing Scandinavian Defense
-- 📚 Learn one new opening to replace it
-- 🛑 Implement stop-loss rule (quit after 2 losses)
-
-### Week 2: Strengthen Your Best
-- 📖 Study 5 GM games in your best opening (Caro-Kann)
-- 🎯 Play 10+ games with your best opening
-- 📝 Review and analyze each game
-
-### Week 3: Address Your Weaker Color
-- 📚 Study 3 opening variations for your weaker color
-- 🎮 Solve 100 tactical puzzles from that color's perspective
-- 🎯 Focus 80% of games on improving that color
-
-### Week 4: Consolidate and Measure
-- 📊 Track your win rate daily
-- 🎯 Compare to baseline (current 35.1%)
-- 🏆 Celebrate improvements!
-
-**Expected Result**: +50 to +100 rating points in 30 days if you follow through!
+1. **Personal Improvement** - Identify specific weaknesses and strengths
+2. **Opening Repertoire Optimization** - Data-driven opening selection
+3. **Training Focus** - Allocate study time to weakest areas
+4. **Performance Tracking** - Monitor improvement over time
+5. **Playing Schedule Optimization** - Play when performing best
+6. **Opponent Selection Strategy** - Choose optimal rating ranges
+7. **Time Control Selection** - Focus on strongest formats
+8. **Coaching Insights** - Provide specific, data-backed recommendations
 
 ---
 
-*Generated with data-driven insights from 830 chess games. All recommendations based on actual performance patterns, not generic advice.*
+## 🔮 Future Enhancements
 
-**Good luck, and may your rating soar! ♟️📈**
+Potential additions to this analysis:
+
+- [ ] Move-by-move analysis with engine evaluation
+- [ ] Blunder rate calculation
+- [ ] Time management analysis (time per move)
+- [ ] Position type classification (tactical vs positional)
+- [ ] Opponent style analysis
+- [ ] Advanced statistical modeling (ELO prediction)
+- [ ] Interactive dashboard with Plotly/Dash
+- [ ] Automated report generation
+- [ ] Comparison with peer group performance
+- [ ] Game phase analysis (opening/middlegame/endgame win rates)
+
+---
+
+## 📝 Methodology Notes
+
+### Statistical Rigor
+- All percentages based on actual game counts
+- No extrapolation beyond data
+- Minimum game thresholds for opening analysis (5+ games)
+- Rolling averages to smooth noise
+- Proper binning for categorical analysis
+
+### Visualization Best Practices
+- No pie charts (difficult to read accurately)
+- Consistent color coding across all charts
+- Clear axis labels and titles
+- Sample sizes displayed (n=X)
+- Grid lines for precise reading
+- High resolution for clarity
+
+### Data Quality
+- Handled missing rating data (marked as '?')
+- Detected and managed inter-account games
+- Validated date formats
+- Consistent time control categorization
+- ECO code standardization
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Potential areas:
+
+- Additional analysis dimensions
+- Improved visualizations
+- Statistical enhancements
+- Bug fixes
+- Documentation improvements
+
+Please open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is provided as-is for educational and analytical purposes.
+
+---
+
+## 🙏 Acknowledgments
+
+- **Lichess.org** for providing free chess platform and data export functionality
+- **python-chess** library for PGN parsing capabilities
+- **pandas/numpy** ecosystem for data analysis tools
+- **matplotlib/seaborn** for visualization capabilities
+
+---
+
+## 📞 Questions?
+
+This analysis demonstrates how data-driven insights can improve chess performance through:
+- 📊 Objective performance measurement
+- 🎯 Identification of specific weaknesses
+- 📈 Tracking improvement over time
+- 🔍 Pattern recognition in playing style
+- 💡 Actionable recommendations based on actual data
+
+*All insights derived from real game data - no generic advice, only data-driven analysis.*
+
+**For questions about implementing similar analysis for your games, refer to the Jupyter notebook which contains all code and methodology.**
+
+---
+
+*Last Updated: December 2025*
+*Analysis based on 830 games across two Lichess accounts*
