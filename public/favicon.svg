@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="12" fill="#050510"/>
+  <rect x="3" y="3" width="58" height="58" rx="9" stroke="#00f3ff" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Red home -->
+  <rect x="6" y="6" width="22" height="22" rx="5" fill="#ff2d55" fill-opacity="0.5"/>
+  <!-- Blue home -->
+  <rect x="36" y="6" width="22" height="22" rx="5" fill="#00f3ff" fill-opacity="0.5"/>
+  <!-- Green home -->
+  <rect x="36" y="36" width="22" height="22" rx="5" fill="#39ff14" fill-opacity="0.5"/>
+  <!-- Yellow home -->
+  <rect x="6" y="36" width="22" height="22" rx="5" fill="#fff700" fill-opacity="0.5"/>
+  <!-- Centre star -->
+  <polygon points="32,22 34,29 41,29 35.5,33.5 37.5,41 32,36.5 26.5,41 28.5,33.5 23,29 30,29" fill="white" fill-opacity="0.9"/>
+</svg>
